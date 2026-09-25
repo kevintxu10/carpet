@@ -61,17 +61,19 @@ longitud de un radio y nos escribe la longitud de la circunferencia, el área de
 volumen de la esfera que corresponden con dicho radio
  */
     System.out.println("\nEjercicio 5");
-
     sc = new Scanner (System.in);
-    System.out.println("\nEjercicio 5");
+
+
     System.out.println("Ingrese el radio");
     double radio = sc.nextDouble();
 
     double circulo = 2 * Math.PI * radio;
     System.out.println("Perimetro:" + circulo);
     double areaC = Math.PI * radio * radio;
+
     System.out.println("Area:" + areaC);
     double volumenE = (4.0/3.0) * Math.PI * Math.pow(radio, 3);
+
     System.out.println("Volumen:" + volumenE);
 
    /*
@@ -94,6 +96,68 @@ muestre el porcentaje de descuento realizado.
  Ejercicio 7: Escribe un programa que lea un valor correspondiente a una distancia en millas marinas
 y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852 metros.
  */
+
+    System.out.println("\n Ejercicio 7");
+
+    sc = new Scanner (System.in);
+    System.out.println("Ingrese las millas marinas");
+
+    double millas = sc.nextDouble();
+
+    double metros = millas * 1852.0;
+    System.out.println("metros:" + metros);
+
+
+   /*
+ Ejercicio 8: Escribe un programa que lee dos números y los visualiza en orden ascendente.
+ */
+
+    System.out.println("\n Ejercicio 8");
+
+    sc = new Scanner(System.in);
+
+    System.out.println("Inserte el primer numero");
+    double n1 = sc.nextDouble();
+
+    System.out.println("Inserte el segundo numero");
+    double n2 = sc.nextDouble();
+
+    double menor = Math.min(n1,n2);
+    double mayor = Math.max(n2,n1);
+
+    System.out.println("PEPE:" + menor + "-" + mayor);
+
+  /*
+ Ejercicio 9: Escribe un programa que lee dos números y nos dice cuál es el mayor o si son iguales
+ */
+    System.out.println("\n Ejercicio 9");
+    System.out.println("Ingrese el primer numero");
+    double op1 = sc.nextDouble();
+
+    System.out.println("Ingrese el segundo numero");
+    double op2 = sc.nextDouble();
+
+    System.out.println("Es mayor" + (op1 > op2));
+    System.out.println("Es igual" + (op1 == op2));
+
+/*
+ Ejercicio 10: Escribe un programa que lea tres números distintos y nos diga cuál es el mayor
+ */
+
+    System.out.println("\n Ejercicio 10");
+    double num1 = sc.nextDouble();
+    System.out.println("Ingrese el primer numero" + num1);
+    double num2 = sc.nextDouble();
+    System.out.println("Ingrese el segundo numero" + num2);
+    double num3 = sc.nextDouble();
+    System.out.println("Ingrese el tercer numero" + num3);
+
+    double max = Math.max(Math.max(num1,num2),num3);
+
+
+
+
+
 }
 
 
