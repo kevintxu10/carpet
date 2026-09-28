@@ -131,11 +131,15 @@ y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852
  Ejercicio 9: Escribe un programa que lee dos números y nos dice cuál es el mayor o si son iguales
  */
     System.out.println("\n Ejercicio 9");
+    sc = new Scanner(System.in);
+
     System.out.println("Ingrese el primer numero");
     double op1 = sc.nextDouble();
 
     System.out.println("Ingrese el segundo numero");
     double op2 = sc.nextDouble();
+
+
 
     System.out.println("Es mayor" + (op1 > op2));
     System.out.println("Es igual" + (op1 == op2));
@@ -145,19 +149,56 @@ y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852
  */
 
     System.out.println("\n Ejercicio 10");
+    sc = new Scanner(System.in);
+
     double num1 = sc.nextDouble();
-    System.out.println("Ingrese el primer numero" + num1);
+    System.out.println("Ingrese el primer numero");
     double num2 = sc.nextDouble();
-    System.out.println("Ingrese el segundo numero" + num2);
+    System.out.println("Ingrese el segundo numero");
     double num3 = sc.nextDouble();
-    System.out.println("Ingrese el tercer numero" + num3);
+    System.out.println("Ingrese el tercer numero");
 
-    double max = Math.max(Math.max(num1,num2),num3);
+    System.out.println("El mayor es :" + Math.max(Math.max(num1,num2),num3));
+
+/*
+ Ejercicio 11: Escribe un programa que lee dos números, calcula y muestra el valor de su suma, resta,
+producto y división. (Ten en cuenta la división por cero).
+ */
 
 
+    System.out.println("\nEjercicio 11");
+
+    sc = new Scanner (System.in);
+    System.out.println("Ingrese el primer numero");
+    double numer1 = sc.nextDouble();
+    System.out.println("Ingrese el segundo numero");
+    double numer2 = sc.nextDouble();
+
+    double sum = numer1 + numer2;
+    double rest = numer1 - numer2;
+    double multi = numer1 * numer2;
+    double divi = numer1 / numer2;
+
+    System.out.println("suma:" + sum);
+    System.out.println("resta:" + rest);
+    System.out.println("multiplicacion:" + multi);
+    System.out.println("division:" + divi);
+
+/*
+ Ejercicio 12: Escribe un programa que lee 2 números y muestra el mayor.
+ */
+
+    System.out.println("\nEjercicio 11");
+    sc = new Scanner(System.in);
+
+    System.out.println("Ingrese el primer numero");
+    double nu1 = sc.nextDouble();
+    System.out.println("Ingrese el segundo numero");
+    double nu2 = sc.nextDouble();
 
 
 
 }
+
 
 
