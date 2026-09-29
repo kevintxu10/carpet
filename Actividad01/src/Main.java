@@ -188,7 +188,7 @@ producto y división. (Ten en cuenta la división por cero).
  Ejercicio 12: Escribe un programa que lee 2 números y muestra el mayor.
  */
 
-    System.out.println("\nEjercicio 11");
+    System.out.println("\nEjercicio 12");
     sc = new Scanner(System.in);
 
     System.out.println("Ingrese el primer numero");
