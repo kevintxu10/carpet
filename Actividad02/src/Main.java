@@ -179,6 +179,97 @@ transcurrido un segundo
 leído algún número negativo o no.
  */
     System.out.println("\n Ejercicio 10");
+    sc = new Scanner(System.in);
+    boolean negativo = false;
+    System.out.println("Introduce numero(no nulos)");
+    for (int i = 1; i <= 10; i++){
+        System.out.println("Numero" + i + ":");
+        int numero = sc.nextInt();
+
+        if (numero == 0){
+            System. out.println("El numero no puede ser cero");
+        }else if (numero < 0){
+            negativo = true;
+        }
+    }
+    if (negativo){
+        System.out.println("Se han leido numeros negativos");
+    }else {
+        System.out.println("Todos los numero son positivos");
+    }
+
+/*
+ Ejercicio 11:  Realiza un programa que lea 10 números no nulos y luego muestre un mensaje
+indicando cuántos son positivos y cuantos negativos
+ */
+
+    System.out.println("\nEjercicio 11");
+    sc = new Scanner(System.in);
+    int positivos = 0;
+    int negativos = 0;
+
+    System.out.println("Introduce un numero y no puede ser 0");
+    for (int i = 1; i <=10; i++){
+        System.out.println("numero" + i + ":");
+        int numeros = sc.nextInt();
+
+        if (numeros > 0){
+            positivos++;
+        }
+        if (numeros <0){
+            negativos++;
+        }
+    }
+    System.out.println("El numero de positivos es: " + positivos++);
+    System.out.println("El numero de negativos es: " + negativos++);
+
+
+
+/*
+ Ejercicio 12:  Realiza un programa que lea una secuencia de números no nulos hasta que se introduzca
+un 0, y luego muestre si ha leído algún número negativo, cuantos positivos y cuantos
+negativos.
+ */
+
+    System.out.println("\nEjercicio 12");
+    sc = new Scanner(System.in);
+    int negativ = 0;
+    int positiv = 0;
+
+    System.out.println("Introduce una secuenda de nuemros(Introduzca el 0 para terminar)");
+    int numero;
+    do {
+        System.out.println("Numero: ");
+        numero = sc.nextInt();
+        if (numero >0){
+            positiv++;
+        }else if (numero <0){
+            negativ++;
+        }
+    }while (numero != 0);
+
+    System.out.println("Cantidad de numeros positivos:" + positiv++);
+    System.out.println("Cnatidad de numero negativos" + negativ++);
+
+
+/*
+ Ejercicio 13:  Realiza un programa que calcule y escriba la suma y el producto de los 10 primeros
+números naturales.
+ */
+
+    System.out.println("\nEjercicio 13");
+    sc =new Scanner(System.in);
+    int suma = 0;
+    int multiplicacion = 1;
+
+    for (int i = 1; i <=10; i++){
+        suma += i;
+        multiplicacion *= i;
+    }
+
+    System.out.println("La suma de los 10 primre numeros naturales es:" + suma);
+    System.out.println("El producto de los 10 primero numeros naturales es:" + multiplicacion);
+
 
 
 
