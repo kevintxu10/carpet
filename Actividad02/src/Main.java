@@ -248,6 +248,7 @@ negativos.
         }
     }while (numero != 0);
 
+
     System.out.println("Cantidad de numeros positivos:" + positiv++);
     System.out.println("Cnatidad de numero negativos" + negativ++);
 
